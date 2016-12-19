@@ -133,6 +133,7 @@
         <include artifact="org.apache.camel:camel-barcode" />
         <apply-to-dependencies skip="true">
             <include module="com.beust.jcommander" />
+            <include module="com.github.jai-imageio" />
             <include module="org.apache.camel.apt" />
             <include module="org.springframework.boot" />
         </apply-to-dependencies>

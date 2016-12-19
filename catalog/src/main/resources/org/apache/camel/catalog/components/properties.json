@@ -11,10 +11,10 @@
     "javaType": "org.apache.camel.component.properties.PropertiesComponent",
     "groupId": "org.apache.camel",
     "artifactId": "camel-core",
-    "version": "2.18.1"
+    "version": "2.19.0-SNAPSHOT"
   },
   "componentProperties": {
-    "locations": { "kind": "property", "type": "array", "javaType": "java.lang.String[]", "deprecated": "false", "secret": "false", "description": "A list of locations to load properties. You can use comma to separate multiple locations. This option will override any default locations and only use the locations from this option." },
+    "locations": { "kind": "property", "type": "array", "javaType": "java.util.List<org.apache.camel.component.properties.PropertiesLocation>", "deprecated": "false", "secret": "false", "description": "A list of locations to load properties. This option will override any default locations and only use the locations from this option." },
     "location": { "kind": "property", "type": "string", "javaType": "java.lang.String", "deprecated": "false", "secret": "false", "description": "A list of locations to load properties. You can use comma to separate multiple locations. This option will override any default locations and only use the locations from this option." },
     "encoding": { "kind": "property", "type": "string", "javaType": "java.lang.String", "deprecated": "false", "secret": "false", "description": "Encoding to use when loading properties file from the file system or classpath. If no encoding has been set then the properties files is loaded using ISO-8859-1 encoding (latin-1) as documented by link java.util.Propertiesload(java.io.InputStream)" },
     "propertiesResolver": { "kind": "property", "type": "object", "javaType": "org.apache.camel.component.properties.PropertiesResolver", "deprecated": "false", "secret": "false", "description": "To use a custom PropertiesResolver" },
@@ -23,6 +23,7 @@
     "propertyPrefix": { "kind": "property", "type": "string", "javaType": "java.lang.String", "deprecated": "false", "secret": "false", "description": "Optional prefix prepended to property names before resolution." },
     "propertySuffix": { "kind": "property", "type": "string", "javaType": "java.lang.String", "deprecated": "false", "secret": "false", "description": "Optional suffix appended to property names before resolution." },
     "fallbackToUnaugmentedProperty": { "kind": "property", "type": "boolean", "javaType": "boolean", "deprecated": "false", "secret": "false", "description": "If true first attempt resolution of property name augmented with propertyPrefix and propertySuffix before falling back the plain property name specified. If false only the augmented property name is searched." },
+    "defaultFallbackEnabled": { "kind": "property", "type": "boolean", "javaType": "boolean", "deprecated": "false", "secret": "false", "description": "If false the component does not attempt to find a default for the key by looking after the colon separator." },
     "ignoreMissingLocation": { "kind": "property", "type": "boolean", "javaType": "boolean", "deprecated": "false", "secret": "false", "description": "Whether to silently ignore if a location cannot be located such as a properties file not found." },
     "prefixToken": { "kind": "property", "type": "string", "javaType": "java.lang.String", "deprecated": "false", "secret": "false", "description": "Sets the value of the prefix token used to identify properties to replace. Setting a value of null restores the default token (link link DEFAULT_PREFIX_TOKEN)." },
     "suffixToken": { "kind": "property", "type": "string", "javaType": "java.lang.String", "deprecated": "false", "secret": "false", "description": "Sets the value of the suffix token used to identify properties to replace. Setting a value of null restores the default token (link link DEFAULT_SUFFIX_TOKEN)." },

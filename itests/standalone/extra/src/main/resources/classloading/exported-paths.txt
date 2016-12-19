@@ -59,6 +59,7 @@ org/apache/camel/impl/osgi
 org/apache/camel/impl/osgi/tracker
 org/apache/camel/impl/remote
 org/apache/camel/impl/scan
+org/apache/camel/impl/transformer
 org/apache/camel/language
 org/apache/camel/language/bean
 org/apache/camel/language/constant
@@ -82,6 +83,7 @@ org/apache/camel/model/language
 org/apache/camel/model/loadbalancer
 org/apache/camel/model/remote
 org/apache/camel/model/rest
+org/apache/camel/model/transformer
 org/apache/camel/processor
 org/apache/camel/processor/aggregate
 org/apache/camel/processor/binding
@@ -104,6 +106,7 @@ org/apache/camel/support
 org/apache/camel/util
 org/apache/camel/util/component
 org/apache/camel/util/concurrent
+org/apache/camel/util/function
 org/apache/camel/util/jndi
 org/apache/camel/util/jsse
 org/apache/camel/util/spring
@@ -353,6 +356,7 @@ com/mongodb/client
 com/mongodb/client/gridfs
 com/mongodb/client/gridfs/codecs
 com/mongodb/client/gridfs/model
+com/mongodb/client/jndi
 com/mongodb/client/model
 com/mongodb/client/model/geojson
 com/mongodb/client/model/geojson/codecs
@@ -404,6 +408,7 @@ groovy/xml
 groovy/xml/dom
 groovy/xml/streamingmarkupsupport
 io/nats
+io/nats/benchmark
 io/nats/client
 io/swagger/annotations
 io/swagger/config
@@ -649,7 +654,9 @@ org/apache/camel/component/salesforce/api
 org/apache/camel/component/salesforce/api/dto
 org/apache/camel/component/salesforce/api/dto/analytics
 org/apache/camel/component/salesforce/api/dto/analytics/reports
+org/apache/camel/component/salesforce/api/dto/approval
 org/apache/camel/component/salesforce/api/dto/bulk
+org/apache/camel/component/salesforce/api/dto/composite
 org/apache/camel/component/salesforce/api/utils
 org/apache/camel/component/schematron
 org/apache/camel/component/schematron/constant
@@ -739,6 +746,7 @@ org/apache/camel/groovy/dataformat
 org/apache/camel/groovy/extend
 org/apache/camel/http
 org/apache/camel/http/common
+org/apache/camel/http/common/cookie
 org/apache/camel/jsonpath
 org/apache/camel/language
 org/apache/camel/language/groovy
@@ -770,6 +778,28 @@ org/apache/camel/swagger/servlet
 org/apache/camel/utils
 org/apache/camel/utils/cassandra
 org/apache/camel/zipkin
+org/apache/curator
+org/apache/curator/drivers
+org/apache/curator/ensemble
+org/apache/curator/ensemble/exhibitor
+org/apache/curator/ensemble/fixed
+org/apache/curator/framework
+org/apache/curator/framework/api
+org/apache/curator/framework/api/transaction
+org/apache/curator/framework/imps
+org/apache/curator/framework/listen
+org/apache/curator/framework/recipes
+org/apache/curator/framework/recipes/atomic
+org/apache/curator/framework/recipes/barriers
+org/apache/curator/framework/recipes/cache
+org/apache/curator/framework/recipes/leader
+org/apache/curator/framework/recipes/locks
+org/apache/curator/framework/recipes/nodes
+org/apache/curator/framework/recipes/queue
+org/apache/curator/framework/recipes/shared
+org/apache/curator/framework/state
+org/apache/curator/retry
+org/apache/curator/utils
 org/apache/cxf
 org/apache/cxf/binding/coloc
 org/apache/cxf/binding/coloc/blueprint
